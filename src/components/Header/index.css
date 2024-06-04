@@ -1,0 +1,93 @@
+/* Write your CSS code here */
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.website-logo {
+  height: 20px;
+  width: 100px;
+}
+
+.menu-logout-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.desktop-nav-menu {
+  display: none;
+}
+.logout-desktop-btn {
+  display: none;
+}
+.logout-mobile-btn {
+  background-color: transparent;
+  border: none;
+}
+.logout-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-menu-items-mobileView-container {
+  background-color: #e6f6ff;
+  width: 100%;
+}
+.mobile-nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+}
+.nav-link {
+  margin: 10px;
+  font-size: 30px;
+}
+.home-icon {
+  height: 30px;
+  width: 30px;
+}
+.products-icon {
+  height: 30px;
+  width: 30px;
+}
+.cart-icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 768px) {
+  .website-logo {
+    height: 100px;
+    width: 300px;
+  }
+  .nav-menu-items-mobileView-container {
+    display: none;
+  }
+  .desktop-nav-menu {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .logout-mobile-btn {
+    display: none;
+  }
+  .logout-desktop-btn {
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+}
